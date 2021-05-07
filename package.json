@@ -20,7 +20,8 @@
     "build:ts": "tsc -p tsconfig.build.json",
     "build:css": "node-sass src/styles/index.scss ./dist/index.css",
     "build": "npm run clean && npm run build:css && npm run build:ts",
-    "format": "prettier --config prettier.config.js --write \"{src,test}/**/*.{ts,tsx,less}\""
+    "format": "prettier --config prettier.config.js --write \"{src,test}/**/*.{ts,tsx,less}\"",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": [
@@ -65,7 +66,8 @@
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "semantic-release": "^17.4.2"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -78,5 +80,9 @@
     "react",
     "storybook",
     "component"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Browinee/react-component.git"
+  }
 }
