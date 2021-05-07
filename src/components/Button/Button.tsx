@@ -13,12 +13,13 @@ interface BaseButtonProps {
     href: string;
     onClickHandler: () => void;
 }
+
 type NativeButtonProps = BaseButtonProps & React.ButtonHTMLAttributes<HTMLElement>;
 type AnchorButtonProps = BaseButtonProps & React.AnchorHTMLAttributes<HTMLElement>;
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>;
 
 const Button: React.FC<ButtonProps> = props => {
-    const {btnType, disabled, size, children, className, href, onClickHandler, ...restProps} = props;
+    const {btnType = "default", disabled = false, size, children, className, href, onClickHandler, ...restProps} = props;
 
     const classes = classNames("btn", className, {
         [`btn-${btnType}`]: btnType,
@@ -40,8 +41,8 @@ const Button: React.FC<ButtonProps> = props => {
     }
 };
 
-Button.defaultProps = {
-    disabled: false,
-    btnType: "default",
-};
+// Button.defaultProps = {
+//     disabled: false,
+//     btnType: "default",
+// };
 export default Button;
