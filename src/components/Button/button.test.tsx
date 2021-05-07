@@ -3,7 +3,7 @@ import {render, fireEvent} from "@testing-library/react";
 import Button, {ButtonProps} from "./Button";
 
 const defaultProps = {
-    onClick: jest.fn(),
+    onClickHandler: jest.fn(),
 };
 
 const testProps: ButtonProps = {
@@ -25,7 +25,7 @@ describe("Button component", () => {
         expect(element).toHaveClass("btn btn-default");
         expect(element.disabled).toBeFalsy();
         fireEvent.click(element);
-        expect(defaultProps.onClick).toHaveBeenCalled();
+        expect(defaultProps.onClickHandler).toHaveBeenCalled();
     });
     it("should render the correct component based on different props", () => {
         const {getByText} = render(<Button {...testProps}>Button</Button>);
