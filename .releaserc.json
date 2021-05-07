@@ -8,7 +8,7 @@
       "changelogTitle": "This is Title"
     }],
     ["@semantic-release/git", {
-      "assets": ["docs/CHANGELOG.md"],
+      "assets": ["docs/CHANGELOG.md"]
     }]
   ]
 }
