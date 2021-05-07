@@ -73,5 +73,10 @@
   },
   "resolutions": {
     "@storybook/react/babel-loader": "8.1.0"
-  }
+  },
+  "keywords": [
+    "react",
+    "storybook",
+    "component"
+  ]
 }
