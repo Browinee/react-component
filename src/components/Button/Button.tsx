@@ -25,7 +25,6 @@ const Button: React.FC<ButtonProps> = props => {
         [`btn-${size}`]: size,
         disabled: btnType === "link" && disabled,
     });
-
     if (btnType === "link" && href) {
         return (
             <a {...restProps} href={href} className={classes}>
