@@ -3,10 +3,6 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/npm",
-    ["@semantic-release/changelog", {
-      "changelogFile": "docs/CHANGELOG.md",
-      "changelogTitle": "This is Title"
-    }],
     ["@semantic-release/git", {
       "assets": ["docs/CHANGELOG.md"]
     }]
