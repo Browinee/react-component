@@ -6,7 +6,7 @@ jobs:
   include:
     - stage: release
       node_js: lts/*
-       script:  npm run build
+      script:  npm run build
       deploy:
         provider: script
         skip_cleanup: true
