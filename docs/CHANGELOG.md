@@ -1,5 +1,12 @@
 This is Title
 
+# [1.5.0](https://github.com/Browinee/react-component/compare/v1.4.0...v1.5.0) (2021-07-04)
+
+
+### Features
+
+* add styled-system ([b848cc8](https://github.com/Browinee/react-component/commit/b848cc8b60e2c29e60660434eba1e1307bc2ebba))
+
 # [1.4.0](https://github.com/Browinee/react-component/compare/v1.3.0...v1.4.0) (2021-06-19)
 
 
